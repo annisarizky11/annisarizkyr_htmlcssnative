@@ -1,0 +1,111 @@
+/*tampilan index*/
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body   {
+    font-family: Lucida Bright, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    background: #c08a8a;
+
+}
+/*p pada about*/
+section p{
+    color: rgb(41, 24, 24);
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+ /*navbar*/
+nav{
+    background-color: rgb(202, 200, 198);
+    overflow: hidden;
+    border-radius: 10px;
+}
+nav a{
+    float: left;
+    display: block;
+    color: #2c2c2c;
+    padding: 15px 20px;
+    text-decoration: none;
+
+}
+nav a:hover {
+    background-color:rgb(54, 48, 47);
+    border-radius: 25px;
+    color: white;
+}
+/*sosial media*/
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+}
+.card{
+    background-color: #bb4848;
+    width: 300px;
+    padding: 20px;
+    margin-top: 40px;
+    
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*gallery*/
+.gallery .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: #dbb6b6;
+    border-radius: 10px;
+  }
+  
+  .gallery .content .card{
+    width: 340px;
+    margin: 15px;
+  }
+  
+  .gallery .content .card .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .gallery .content .card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+/*footer*/
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(114, 58, 58);
+    margin-top: 20px;
+}
+@media screen and (max-width: 500px){
+    .row,.column{
+        width: 100px;
+        padding: 0;
+    }
+
+}
